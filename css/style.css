@@ -1045,15 +1045,84 @@ template {
 }
 
 .advantage {
-  padding: 100px 0;
-  margin-bottom: 50px;
+  padding-top: 100px;
+  position: relative;
   background-color: #ffd200;
+  z-index: 1;
+}
+
+.advantage:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 530px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 0;
 }
 
 .advantage-title {
-  font-family: 'Museo Sans Light', sans-serif;
+  margin-bottom: 230px;
   font-size: 32px;
   line-height: 50px;
+}
+
+.advantage-item {
+  position: relative;
+  z-index: 2;
+}
+
+.advantage-item_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.advantage-item_text {
+  width: 370px;
+  padding-top: 30px;
+  padding-left: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.warranty {
+  padding-top: 145px;
+  padding-bottom: 240px;
+}
+
+.warranty-title {
+  margin-bottom: 100px;
+}
+
+.warranty-item_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.warranty-item_img {
+  width: 270px;
+  height: 360px;
+  padding: 21px;
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.warranty-item_text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .payment {
@@ -1158,11 +1227,6 @@ template {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.payment-form_container {
-  width: 366px;
-  text-align: center;
 }
 
 .payment-form_name {
@@ -1354,6 +1418,16 @@ img {
   .measuring-steps_img:after {
     display: none;
   }
+  .advantage:after {
+    height: 1000px;
+  }
+  .advantage-item {
+    margin-bottom: 30px;
+  }
+  .advantage-item_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1533,6 +1607,26 @@ img {
   .advantage {
     padding: 80px 0;
   }
+  .advantage:after {
+    height: 1000px;
+  }
+  .advantage-title {
+    margin-bottom: 100px;
+  }
+  .warranty {
+    padding-top: 105px;
+    padding-bottom: 200px;
+  }
+  .warranty-item {
+    margin-bottom: 20px;
+  }
+  .warranty-item_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .warranty-title {
+    margin-bottom: 80px;
+  }
   .payment {
     padding-top: 85px;
   }
@@ -1660,13 +1754,36 @@ img {
   }
   .section-title {
     margin-bottom: 50px;
-    font-size: px;
+    font-size: 20px;
   }
   .section-subtitle {
     font-size: 15px;
   }
+  .advantage {
+    padding: 60px 0;
+  }
+  .advantage:after {
+    height: 1430px;
+  }
+  .advantage-title {
+    margin-bottom: 100px;
+  }
   .advantage-title {
     font-size: 25px;
+  }
+  .warranty {
+    padding-top: 55px;
+    padding-bottom: 100px;
+  }
+  .warranty-item {
+    margin-bottom: 20px;
+  }
+  .warranty-item_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .warranty-title {
+    margin-bottom: 40px;
   }
   .footer-maps {
     display: none;
@@ -1740,7 +1857,7 @@ img {
     line-height: 25px;
   }
   .form form {
-    width: 320px;
+    width: 300px;
     margin: 0 auto;
   }
   .form-input_name {
@@ -1787,7 +1904,7 @@ img {
     margin: 20px auto;
   }
   .price-card_img img {
-    width: 100%;
+    width: 280px;
   }
   .measuring {
     padding-top: 94px;
@@ -1803,8 +1920,42 @@ img {
   .advantage {
     padding: 60px 0;
   }
-  .advantage-title {
-    line-height: 30px;
+  .advantage:after {
+    height: 1130px;
+  }
+  .advantage-item_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantage-item_text {
+    width: 280px;
+    padding-top: 10px;
+    padding-left: 8px;
+  }
+  .advantage-item_img img {
+    display: block;
+    width: 280px;
+  }
+  .warranty {
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+  .warranty-item_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .warranty-item_text {
+    font-size: 14px;
   }
   .payment {
     padding-top: 65px;
@@ -1826,8 +1977,14 @@ img {
     margin-bottom: 30px;
     line-height: 25px;
   }
+  .payment-form_name {
+    padding: 18px;
+  }
+  .payment-form_tel {
+    padding: 18px;
+  }
   .payment-form_btn {
-    padding: 25px;
+    padding: 18px;
   }
   .list-text {
     width: 85%;
