@@ -1884,7 +1884,7 @@ img {
     height: 440px;
   }
   .modal-window1 form {
-    width: 280pxk;
+    width: 280px;
   }
   .portfolio {
     padding-top: 60px;
@@ -2008,9 +2008,6 @@ img {
 }
 
 @media (max-width: 367px) {
-  .payment-form_name, .payment-form_tel, .payment-form_btn {
-    width: 300px;
-  }
   .payment form {
     display: -webkit-box;
     display: -ms-flexbox;
