@@ -1857,16 +1857,17 @@ img {
     line-height: 25px;
   }
   .form form {
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
   }
   .form-input_name {
-    width: 100%;
+    width: 280px;
   }
   .form-input_tel {
-    width: 100%;
+    width: 280px;
   }
   .form-btn {
+    width: 280px;
     padding: 25px;
   }
   .form-call_manager {
@@ -1878,6 +1879,12 @@ img {
   }
   .hiden-xs_btn {
     display: none;
+  }
+  .modal-window1_form {
+    height: 440px;
+  }
+  .modal-window1 form {
+    width: 280pxk;
   }
   .portfolio {
     padding-top: 60px;
@@ -1960,9 +1967,6 @@ img {
   .payment {
     padding-top: 65px;
   }
-  .payment:after {
-    height: 540px;
-  }
   .payment-text_title {
     margin-bottom: 30px;
     line-height: 25px;
@@ -1975,6 +1979,7 @@ img {
   }
   .payment-form_title {
     margin-bottom: 30px;
+    text-align: center;
     line-height: 25px;
   }
   .payment-form_name {
