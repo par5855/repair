@@ -1,0 +1,43 @@
+@import "var"
+@import "mixins"
+@import "normalize"
+@import "font"
+@import "interface"
+
+@import "header"
+@import "main"
+@import "feedback"
+@import "modal"
+@import "portfolio"
+@import "price"
+@import "measuring"
+@import "advantage"
+@import "payment"
+@import "footer"
+
+*
+  box-sizing: border-box
+body
+  +light
+  overflow-x: hidden   
+.container
+  width: 1170px
+  margin: 0 auto
+img
+  max-width: 500% 
+  display: block
+.section
+  &-title
+    +bold
+    line-height: 45px
+    font-size: 30px
+    &_center
+      text-align: center
+  &-subtitle
+    display: block
+    +light
+    font-size: 20px
+    &_center
+      text-align: center    
+
+@import "media"

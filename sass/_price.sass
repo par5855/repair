@@ -1,0 +1,68 @@
+.price
+  padding-top: 100px
+  &-title
+    margin-top: 0
+    margin-bottom: 60px
+  &-subtitle
+    margin-bottom: 60px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+  &-card
+    margin-right: 18px
+    margin-bottom: 31px
+    text-align: center
+    border: 1px solid lighten($text-color, 70%)
+    &:hover
+      box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+      & > .price-card_img:after
+        opacity: 1
+    &_img
+      margin-bottom: 40px
+      position: relative
+      transition: 0.2s
+      &:after
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        transition: 0.2s
+        opacity: 0
+        background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0)100%)
+        
+    & img
+      width: 370px
+      height: 263px
+    &_text
+      margin-bottom: 32px
+      +light
+      font-size: 18px
+    &_link
+      margin-bottom: 46px
+      position: relative
+      display: inline-block
+      text-decoration: none
+      +bold
+      font-size: 16px
+      color: $text-color
+      &:after
+        content: ''
+        width: 100%
+        height: 3px
+        display: block
+        position: absolute
+        bottom: -3px
+        background-color: $btn-color
+      &:hover
+        &:after
+          height: 13px
+          transition: 0.2s
+          z-index: -1
+        
+          
+
+

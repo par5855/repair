@@ -1,0 +1,24 @@
+.button
+ width: 100%
+ border: none 
+ padding: 19px 37px 
+ border-radius: 10px
+ background-color: $btn-color
+ +bold
+ font-size: 13px   
+ &:hover
+  background-color: lighten($btn-color, 10%)
+  cursor: pointer
+ &:focus
+  outline: none
+.input
+ width: 272px
+ padding: 25px 
+ margin-top: 10px
+ margin-bottom: 20px
+ border: 1px solid $input-border-color
+ border-radius: 10px
+ +light
+ font-size: 15px
+ &-name
+   margin-right: 30px

@@ -1,0 +1,99 @@
+.payment
+  position: relative
+  display: flex
+  padding-top: 105px
+  background-color: $btn-color
+  &:before
+    content: ""
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    width: 45%
+    height: 662px
+    background-image: url(../img/payment/payment-bg.jpg)
+    background-position: right
+    z-index: 0
+  &-container
+    display: flex
+    justify-content: space-between
+  &-text
+    position: relative
+    z-index: 1
+    &_title
+      margin-bottom: 50px
+      +bold
+      font-size: 22px
+      line-height: 33px
+    &_subtitle
+      margin-bottom: 96px
+      +light
+      font-size: 16px  
+    &_list
+      margin-bottom: 27px
+      display: flex
+      align-items: center
+      &:last-child
+        margin-bottom: 92px
+  &-form 
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    z-index: 1
+    &_title
+      margin-bottom: 50px
+      +bold
+      font-size: 22px
+      line-height: 33px
+    &_subtitle
+      margin-bottom: 53px
+      +light
+      font-size: 16px   
+    & form
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+    &_container
+      width: 366px
+      text-align: center  
+    &_name
+      margin-top: 0
+      margin-bottom: 17px
+      width: 100%
+      display: block
+    &_tel
+      margin-top: 0
+      margin-bottom: 31px
+      width: 100%
+    &_btn
+      padding: 28px
+      margin-bottom: 35px
+      width: 100%
+.list
+  &-number
+    width: 36px
+    height: 36px
+    margin-right: 34px
+    border-radius: 50%
+    border: 2px solid 
+  &-number1
+    background-image: url(../img/payment/payment-img1.png)
+    background-repeat: no-repeat
+    background-position: center
+  &-number2
+    background-image: url(../img/payment/payment-img2.png)
+    background-repeat: no-repeat
+    background-position: center
+  &-number3
+    background-image: url(../img/payment/paymenti-mg3.png)
+    background-repeat: no-repeat
+    background-position: center
+  &-number4
+    background-image: url(../img/payment/payment-img4.png)
+    background-repeat: no-repeat
+    background-position: center      
+  &-text
+    +medium
+    font-size: 16px
+    line-height: 23px   

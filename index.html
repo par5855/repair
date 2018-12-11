@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Ремонт и отделка квартир</title>
+</head>
+
+
+
+<body>
+    <!-- Yandex.Metrika counter -->
+    <script> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51470809, "init", { id: 51470809, clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/51470809" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript> <!-- /Yandex.Metrika counter -->
+  <header class="header">
+    <div class="container header-wrap">
+      <div class="header-logo">
+        <img src="img/header-logo.png" alt="отделка квартир">
+      </div>
+      <div class="header-contact">
+        <div class="header-contact_phone">
+          <span class="header-contact_city">Калуга, Москва, МО</span>
+          <a href="tell:+74954225131" class="header-contact_tel">+7 (495) 42-251-31</a>
+        </div>
+        <div class="header-contact_button">
+          <button class="header-contact_btn button btn-xs" id="button"><span class="hiden-xs_call">Позвоните</span> <span class="hiden-xs">мне</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <div class="main">
+    .<div class="container">
+      <div class="main-wrap">
+        <div class="main-text">
+          <h1 class="main-header">
+            Внутренняя отделка помещений "под ключ"
+            <span>с гарантией качества, прописанной в договоре</span>
+          </h1>
+          <div class="main-advantages">
+            <div class="main-advantages_item">
+              <div class="main-advantages_img"></div>
+              <div class="main-advantages_text">
+                Точно соблюдаем сроки
+              </div>
+            </div>
+            <!-- main-adventege -->
+            <div class="main-advantages_item">
+              <div class="main-advantages_img main-advantages_img1"></div>
+              <div class="main-advantages_text">
+                Рассчитаем смету на работы<br>и материалы в день обращения
+              </div>
+            </div>
+            <!-- main-adventege -->
+            <div class="main-advantages_item">
+              <div class="main-advantages_img main-advantages_img2"></div>
+              <div class="main-advantages_text">
+                Предложим более 100 вариантов исполнения дизайна Вашего жилья
+              </div>
+            </div>
+            <!-- main-adventege -->
+          </div>
+        </div>
+        <div class="main-img">
+          <img src="img/main/image-plan.jpg" alt="План-схема">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="feedback">
+    .<div class="container">
+      <div class="form">
+        <div class="form-title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
+          <div class="form-subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</div>
+        </div>
+        <form action="mailer/smart.php" method="POST">
+          <input class="input input-name" type="text" name="user_name" placeholder="Ваше имя" required>
+          <input class="input input-tel" type="tel" name="user_phone" placeholder="Ваш телефон" required>
+          <button class="button form-btn" type="submit"><span class="hiden-xs_btn">Получить</span> бесплатный <span class="hiden-xs_btn">дизайн-</span>проект</button>
+        </form>
+        <div class="form-call">
+          <div class="form-call_manager form-call_connect">Наш менеджер перезвонит Вам<br> в течение 60 секунд</div>
+          <div class="form-call_personaly form-call_connect">
+            <div class="form-call_img"></div>
+            <div class="form-call_text">или перезвоните нам сами
+              <a href="tell:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="modal" id="modal">
+    <div class="modal-window1">
+      <div class="modal-window1_info">
+        <div class="modal-wrap1">
+          <div class="info-bath hiden-s">
+            <div class="info-bath_image"></div>
+            <div class="info-bath_text">
+              <div class="info-bath_title">Ванная комната</div>
+              <div class="info-bath_text1">35*150 - <span> 31 000 руб.</span></div>
+              <div class="info-bath_text2">170*170 - <span> 43 000 руб.</span></div>
+            </div>
+          </div>
+          <div class="info-restroom hiden-xs">
+            <div class="info-restroom_image"></div>
+            <div class="info-restroom_text">
+              <div class="info-restroom_title">Туалет</div>
+              <div class="info-restroom_text1">135*70 - <span> 14 000 руб.</span></div>
+            </div>
+          </div>
+          <div class="info-bathroom">
+            <div class="info-bathroom_image"></div>
+            <div class="info-bathroom_text">
+              <div class="info-bathroom_title">Совмещенный санузел</div>
+              <div class="info-bathroom_text1">170*210 - <span> 54 000 руб.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-wrap2 hiden-m">
+          <div class="info-service_title">В стоимость работ входит</div>
+          <ul class="info-service_list">
+            <li><span>Демонтаж старого покрытия стен и пола</span></li>
+            <li><span>Выравнивание стен гипсовыми составами</span></li>
+            <li><span>Грунтовка стен и пола антисептиком, бетоноконтактом</span></li>
+            <li><span>Монтаж кафельной плитки на полу и стенах</span></li>
+            <li><span>Установка реечного или натяжного потолка, светильников</span></li>
+            <li><span>Монтаж двери с коробкой</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-window1_form">
+        <div class="form-title">Узнайте точную стоимость ремонта по телефону!</div>
+        <div class="form-subtitle">Заполните поля ниже - мы свяжемся с Вами</div>
+        <form action="mailer/smart.php" method="POST">
+          <input class="input form-input_name" type="text" name="user_name" placeholder="Ваше имя" required>
+          <input class="input form-input_tel" type="tel" name="user_phone" placeholder="Ваш телефон" required>
+          <button class="button form-btn form-xs" type="submit">Узнать стоимость</button>
+        </form>
+        <div class="form-call">
+          <div class="form-call_personaly form-call_connect hiden-xs">
+            <div class="form-call_text">Или вы можете перезвонить нам по телефону:
+              <a href="tell:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-close" id="close">&#10006;</div>
+    </div>
+  </div>
+
+  <section class="portfolio">
+    <div class="container">
+    <h2 class="section-title section-title_center">
+      Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах
+    </h2> 
+    <div class="slider">
+      <div class="slider-item"><img src="img/portfolio/slide-img1.jpg" alt="Portfolio-img"></div>
+      <div class="slider-item"><img src="img/portfolio/slide-img2.jpg" alt="Portfolio-img"></div>
+      <div class="slider-item"><img src="img/portfolio/slide-img3.jpg" alt="Portfolio-img"></div>
+      <div class="slider-item"><img src="img/portfolio/slide-img1.jpg" alt="Portfolio-img"></div>
+      <div class="slider-item"><img src="img/portfolio/slide-img2.jpg" alt="Portfolio-img"></div>
+      <div class="slider-item"><img src="img/portfolio/slide-img3.jpg" alt="Portfolio-img"></div>
+    </div> 
+    </div>
+  </section>
+
+<div class="price">
+  <div class="container">
+    <h3 class="price-title section-title section-title_center">У нас очень гибкая система скидок<br>на комплексные работы!</h3>
+    <!-- /.price-title -->
+    <span class="price-subtitle section-subtitle section-subtitle_center">Прайс на наши услуги</span>
+    <!-- /.price-subtitle -->
+    <div class="price-wrap">
+      <div class="price-card wow slideInUp" data-wow-delay="0.4s">
+        <div class="price-card_img"><img src="img/price/price-img1.jpg" alt="price-img"></div>
+        <!-- /.price-card_img -->
+        <div class="price-card_text">Ремонт ванных комнат и с/у</div>
+        <!-- /.price-card_text -->
+        <a href="#" class="price-card_link">Узнать цены</a>
+        <!-- /.price-card_link -->
+      </div>
+      <!-- /.price-card -->
+        <div class="price-card wow slideInUp" data-wow-delay="0.6s">
+        <div class="price-card_img"><img src="img/price/price-img2.jpg" alt="price-img"></div>
+        <!-- /.price-card_img -->
+        <div class="price-card_text">Ремонт комнат и квартир</div>
+        <!-- /.price-card_text -->
+        <a href="#" class="price-card_link">Узнать цены</a>
+        <!-- /.price-card_link -->
+      </div>
+      <!-- /.price-card -->
+      <div class="price-card wow slideInUp" data-wow-delay="0.8s">
+        <div class="price-card_img"><img src="img/price/price-img3.jpg" alt="price-img"></div>
+        <!-- /.price-card_img -->
+        <div class="price-card_text">Отделка офисных помещений</div>
+        <!-- /.price-card_text -->
+        <a href="#" class="price-card_link">Узнать цены</a>
+        <!-- /.price-card_link -->
+      </div>
+      <!-- /.price-card -->
+      <div class="price-card wow slideInUp" data-wow-delay="0.4s">
+        <div class="price-card_img"><img src="img/price/price-img4.jpg" alt="price-img"></div>
+        <!-- /.price-card_img -->
+        <div class="price-card_text">Ремонт в новостройках</div>
+        <!-- /.price-card_text -->
+        <a href="#" class="price-card_link">Узнать цены</a>
+        <!-- /.price-card_link -->
+      </div>
+      <!-- /.price-card -->
+      <div class="price-card wow slideInUp" data-wow-delay="0.6s">
+        <div class="price-card_img"><img src="img/price/price-img5.jpg" alt="price-img"></div>
+        <!-- /.price-card_img -->
+        <div class="price-card_text">Ремонт кухонь</div>
+        <!-- /.price-card_text -->
+        <a href="#" class="price-card_link">Узнать цены</a>
+        <!-- /.price-card_link -->
+      </div>
+      <!-- /.price-card -->
+      <div class="price-card wow slideInUp" data-wow-delay="0.8s">
+        <div class="price-card_img"><img src="img/price/price-img6.jpg" alt="price-img"></div>
+        <!-- /.price-card_img -->
+        <div class="price-card_text">Ремонт дач и коттеджей</div>
+        <!-- /.price-card_text -->
+        <a href="#" class="price-card_link">Узнать цены</a>
+        <!-- /.price-card_link -->
+      </div>
+      <!-- /.price-card -->
+    </div>
+    <!-- /.price-wrap -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.price -->
+<section class="measuring">
+  <div class="container">
+    <div class="measuring-title section-title section-title_center">Наши специалисты готовы выехать на замер <br> в любое удобное для Вас время</div>
+    <!-- /.measuring-title section-title section-title_center -->
+    <div class="measuring-subtitle section-subtitle section-subtitle_center">5 шагов до ремонта</div>
+    <!-- /.section-subtitle section-subtitle_center -->
+    <div class="measuring-steps_wrap">
+      <div class="measuring-steps wow zoomInUp" data-wow-delay="0.4s">
+        <div class="measuring-steps_img measuring-steps_img1 "></div>
+        <!-- /.measuring-stems_img -->
+        <div class="measuring-steps_text">Вы звоните нам или оставляете заявку</div>
+        <!-- /.measuring-steps_text -->
+      </div>
+      <!-- /.measuring-steps -->
+      <div class="measuring-steps wow zoomInUp" data-wow-delay="0.6s">
+        <div class="measuring-steps_img measuring-steps_img2 "></div>
+        <!-- /.measuring-stems_img -->
+        <div class="measuring-steps_text">Согласуем удобное для Вас время выезда специалиста на замер</div>
+        <!-- /.measuring-steps_text -->
+      </div>
+      <!-- /.measuring-steps -->
+      <div class="measuring-steps wow zoomInUp" data-wow-delay="0.8s">
+        <div class="measuring-steps_img measuring-steps_img3 "></div>
+        <!-- /.measuring-stems_img -->
+        <div class="measuring-steps_text">Рассчитываем смету согласовываем с Вами</div>
+        <!-- /.measuring-steps_text -->
+      </div>
+      <!-- /.measuring-steps -->
+      <div class="measuring-steps wow zoomInUp" data-wow-delay="1s">
+        <div class="measuring-steps_img measuring-steps_img4 "></div>
+        <!-- /.measuring-stems_img -->
+        <div class="measuring-steps_text">Подписываем договор закупаем материал по оптовым ценам</div>
+        <!-- /.measuring-steps_text -->
+      </div>
+      <!-- /.measuring-steps -->
+      <div class="measuring-steps wow zoomInUp" data-wow-delay="1.2s">
+        <div class="measuring-steps_img measuring-steps_img5 "></div>
+        <!-- /.measuring-stems_img -->
+        <div class="measuring-steps_text">Выполняем ремонт в указанные сроки</div>
+        <!-- /.measuring-steps_text -->
+      </div>
+      <!-- /.measuring-steps -->
+    </div>
+    <!-- /.measuring-steps_wrap -->
+  </div>
+  <!-- container -->
+</section>
+<!-- /.measuring -->
+<section class="advantage">
+  <div class="container">
+    <div class="advantage-title section-title_center">Ремонт обойдется Вам дешевле, так как <br> мы используем качественные материалы по оптовым ценам</div>
+    <!-- /.advantage-title section-title_center -->
+    
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.advantage -->
+
+<div class="payment">
+  <div class="container">
+      <div class="payment-container">
+     <div class="payment-text">
+       <div class="payment-text_title">Мы можем озвучить Вам примерную стоимость<br> работы и материалов по телефону</div>
+       <div class="payment-text_subtitle">Для этого нужно ответить на 4 вопроса:</div>
+       <div class="payment-text_list list">
+         <div class="list-number list-number1"></div>
+         <div class="list-text">Какова площадь помещения?</div>
+       </div>
+       <div class="payment-text_list list">
+         <div class="list-number list-number2"></div>
+         <div class="list-text">У Вас новостройка или вторичное жилье?</div>
+       </div>
+       <div class="payment-text_list list">
+         <div class="list-number list-number3"></div>
+         <div class="list-text">Где находится помещение, в котором будет<br>производиться ремонт?</div>
+       </div>
+       <div class="payment-text_list list">
+         <div class="list-number list-number4"></div>
+         <div class="list-text">Назначение помещения?</div>
+       </div>
+     </div>
+     <div class="payment-form">
+       <div class="payment-form_container">
+       <div class="payment-form_title">Оставьте заявку на бесплатный<br>расчет ремонта по телефону</div>
+       <div class="payment-form_subtitle">Для этого заполните форму ниже</div>
+      <form action="mailer/smart.php" method="POST">
+        <input class="input payment-form_name" type="text" name="user_name" placeholder="Ваше имя" required>
+        <input class="input payment-form_tel" type="tel" name="user_phone" placeholder="Ваш телефон" required>
+        <button class="button payment-form_btn form-xs" type="submit">Узнать стоимость</button>
+      </form>
+      <div class="payment-form_text">Мы перезвоним Вам в течение 60 секунд</div>
+      </div>
+     </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.1166502522237!2d44.996511515565075!3d53.215756779951846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4141011023fa4275%3A0xa551663010773d08!2z0YPQuy4g0JvQtdC90LjQvdCwLCDQn9C10L3Qt9CwLCDQn9C10L3Qt9C10L3RgdC60LDRjyDQvtCx0Lsu!5e0!3m2!1sru!2sru!4v1544098831374"height="640" style="border:0;width:100%" allowfullscreen></iframe>
+    </div>
+    <!-- /.footer-maps -->
+    <div class="footer-contact">
+      <div class="footer-contact_title">Приезжайте к нам в гости<br>Проконсультируем Вас<br>по всем вопросам ремонта</div>
+      <!-- /.footer-contact_title -->
+      <div class="footer-contact_info">
+        <div class="footer-contact_item">
+          <div class="footer-contact_img img1"></div>
+          <div class="footer-contact_text">г. Пенза<span>ул. Ленинга, д. 10,</span><span>корпус 2, оф. 308</span></div>
+          <!-- /.footer-contact_text span -->
+        </div>
+        <!-- /.footer-contact_item -->
+        <div class="footer-contact_item">
+          <div class="footer-contact_img img2"></div>
+          <div class="footer-contact_text">Режим работы:<span>с 9:00 до 18:00</span></div>
+          <!-- /.footer-contact_text span -->
+        </div>
+        <!-- /.footer-contact_item -->
+        <div class="footer-contact_item">
+          <div class="footer-contact_img img3"></div>
+          <div class="footer-contact_text">Телефон:<a href="tell:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a></div>
+          <!-- /.footer-contact_text span -->
+        </div>
+        <!-- /.footer-contact_item -->
+      </div>
+      <!-- /.footer-contact_info -->
+    </div>
+    <!-- /.footer-contact -->
+  </footer>
+  <!-- /.footer -->
+
+  
+  <script>
+    var button = document.querySelector('#button');
+    var modal = document.querySelector('#modal');
+    var close = document.querySelector('#close');
+
+    button.addEventListener('click', function modalVisible() {
+      modal.classList.toggle('modal-visible');
+    });
+    close.addEventListener('click', function modalHiden() {
+      modal.classList.remove('modal-visible');
+    })  
+  </script>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    $(document).ready(function () {
+        $('.slider').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          nextArrow: '<div class="arrow arrow_right"></div>',
+          prevArrow: '<div class="arrow arrow_left"></div>',
+          responsive: [
+          {
+          breakpoint: 1200,
+          settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1          
+          }
+          },
+          {
+          breakpoint: 992,
+          settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+          }
+          },
+          {
+          breakpoint: 768,
+          settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+          }
+          },
+          {
+          breakpoint: 576,
+          settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+          }
+          }
+          ]
+          });
+        });
+  </script>
+  <script>
+    $('form').submit(function (event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: 'mailer/smart.php',
+        data: $(this).serialize()
+      }).done(function () {
+        $(this).find('input').val("");
+        alert("Сообщение успешно отправилось");
+        $('form').trigger("reset");
+      });
+      return true;
+    });
+  </script>
+  <script>
+    document.querySelector('#button').addEventListener('click', function () {
+      yaCounter51470809.reachGoal('btn'); return true;
+    })
+  </script>
+    
+  </body>
+</html>
+          
+  

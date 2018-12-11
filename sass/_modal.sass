@@ -1,0 +1,125 @@
+  
+.modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background: rgba(#000000, 0.52%)
+  left: 0
+  top: 0
+  display: none
+  z-index: 1
+  &-visible
+    display: flex
+  &-window1
+    width: 70%
+    height: 80%
+    margin: auto
+    display: flex
+    position: relative
+    overflow-y: auto
+    &_info
+      width: 50%
+      height: 690px
+      padding-top: 80px
+      padding-left: 80px
+      background-color: $main-bg-color
+    &_form
+      width: 50%
+      height: 690px
+      background-color: #ffffff
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-top: 70px
+      padding-left: 100px
+      padding-right: 100px
+      text-align: center
+  &-close
+    position: absolute
+    top: 20px
+    right: 20px
+    &:hover
+      color: $btn-color
+      cursor: pointer  
+
+            
+.info
+  &-bath, &-restroom, &-bathroom
+    display: flex
+    margin-bottom: 16px
+    &_image
+      width: 120px
+      height: 80px
+      background-image: url(../img/modal/modal1/bath.jpg)
+    &_text
+      margin-left: 28px  
+    &_title
+      +medium
+      font-size: 16px
+      &:after
+        content: ""
+        width: 44px
+        border: 1px solid $btn-color
+        display: block
+        margin-bottom: 13px
+        margin-top: 13px
+    &_text1 span, &_text2 span
+      +bold 
+  &-restroom
+    &_image
+      background-image: url(../img/modal/modal1/restroom.jpg)
+      background-position: 50% 80%
+  &-bathroom
+    &_image
+      background-image: url(../img/modal/modal1/bathroom.jpg)
+  &-service
+    &_title
+      margin-top: 55px
+      margin-bottom: 30px
+      +bold
+      font-size: 14px
+    &_list
+      color: $btn-color
+      +bold
+      & span
+        color: $text-color 
+        +light
+        line-height: 25px 
+.form
+  &-title
+    margin-bottom: 54px
+    font-size: 22px
+    +bold
+    line-height: 34px
+  &-subtitle
+    margin-top: 0
+    margin-bottom: 53px
+    +light
+    font-size: 16px
+  &-input
+    &_name
+      width: 100%
+      margin-top: 0
+      margin-right: 0
+      margin-bottom: 15px
+      padding: 28px
+      
+    &_tel
+      width: 100%
+      margin-bottom: 31px
+      margin-top: 0
+  &-btn
+    padding: 28px 
+    margin-bottom: 34px
+  &-call
+    &_text
+      width: 250px
+      +light
+      font-size: 15px
+    &_tel
+      display: block
+      text-decoration: none
+      color: $text-color
+      +bold    
+
+
