@@ -392,6 +392,10 @@ template {
   font-size: 15px;
 }
 
+.input:focus {
+  outline: none;
+}
+
 .input-name {
   margin-right: 30px;
 }
@@ -813,7 +817,8 @@ template {
   margin-bottom: 100px;
 }
 
-.slider-item img {
+.slider-item {
+  outline: none;
   max-width: 95%;
 }
 
@@ -1293,18 +1298,16 @@ template {
 }
 
 .footer-maps {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+  width: 55%;
 }
 
 .footer-contact {
   padding: 100px 0 100px 136px;
-  margin: 0 365px 0 0;
 }
 
 .footer-contact_title {
   margin-bottom: 100px;
-  font-family: 'Museo Sans Black', sans-serif;
+  font-family: 'Museo Sans Bold', sans-serif;
   font-size: 22px;
   line-height: 35px;
 }
@@ -1785,8 +1788,15 @@ img {
   .warranty-title {
     margin-bottom: 40px;
   }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .footer-maps {
-    display: none;
+    width: 100%;
+    height: 200px;
   }
   .footer-contact {
     padding: 70px 0;
@@ -1967,6 +1977,9 @@ img {
   .payment {
     padding-top: 65px;
   }
+  .payment:after {
+    height: 500px;
+  }
   .payment-text_title {
     margin-bottom: 30px;
     line-height: 25px;
@@ -1993,6 +2006,9 @@ img {
   }
   .list-text {
     width: 85%;
+  }
+  .footer-maps {
+    width: 100%;
   }
   .footer-contact {
     padding: 20px;
