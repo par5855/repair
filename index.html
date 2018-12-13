@@ -27,7 +27,7 @@
       <div class="header-contact">
         <div class="header-contact_phone">
           <span class="header-contact_city">Калуга, Москва, МО</span>
-          <a href="tell:+74954225131" class="header-contact_tel">+7 (495) 42-251-31</a>
+          <a href="tel:+74954225131" class="header-contact_tel">+7 (495) 42-251-31</a>
         </div>
         <div class="header-contact_button">
           <button class="header-contact_btn button btn-xs" id="button"><span class="hiden-xs_call">Позвоните</span> <span class="hiden-xs">мне</span></button>
@@ -95,7 +95,7 @@
           <div class="form-call_personaly form-call_connect">
             <div class="form-call_img"></div>
             <div class="form-call_text">или перезвоните нам сами
-              <a href="tell:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a>
+              <a href="tel:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a>
             </div>
           </div>
         </div>
@@ -155,7 +155,7 @@
         <div class="form-call">
           <div class="form-call_personaly form-call_connect hiden-xs">
             <div class="form-call_text">Или вы можете перезвонить нам по телефону:
-              <a href="tell:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a>
+              <a href="tel:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a>
             </div>
           </div>
         </div>
@@ -203,7 +203,7 @@
         <!-- /.price-card_img -->
         <div class="price-card_text">Ремонт комнат и квартир</div>
         <!-- /.price-card_text -->
-        <a href="#" class="price-card_link">Узнать цены</a>
+        <a href="#" class="price-card_link" >Узнать цены</a>
         <!-- /.price-card_link -->
       </div>
       <!-- /.price-card -->
@@ -212,7 +212,7 @@
         <!-- /.price-card_img -->
         <div class="price-card_text">Отделка офисных помещений</div>
         <!-- /.price-card_text -->
-        <a href="#" class="price-card_link">Узнать цены</a>
+        <a href="#" class="price-card_link" >Узнать цены</a>
         <!-- /.price-card_link -->
       </div>
       <!-- /.price-card -->
@@ -221,7 +221,7 @@
         <!-- /.price-card_img -->
         <div class="price-card_text">Ремонт в новостройках</div>
         <!-- /.price-card_text -->
-        <a href="#" class="price-card_link">Узнать цены</a>
+        <a href="#" class="price-card_link" >Узнать цены</a>
         <!-- /.price-card_link -->
       </div>
       <!-- /.price-card -->
@@ -230,7 +230,7 @@
         <!-- /.price-card_img -->
         <div class="price-card_text">Ремонт кухонь</div>
         <!-- /.price-card_text -->
-        <a href="#" class="price-card_link">Узнать цены</a>
+        <a href="#" class="price-card_link" >Узнать цены</a>
         <!-- /.price-card_link -->
       </div>
       <!-- /.price-card -->
@@ -239,7 +239,7 @@
         <!-- /.price-card_img -->
         <div class="price-card_text">Ремонт дач и коттеджей</div>
         <!-- /.price-card_text -->
-        <a href="#" class="price-card_link">Узнать цены</a>
+        <a href="#" class="price-card_link" >Узнать цены</a>
         <!-- /.price-card_link -->
       </div>
       <!-- /.price-card -->
@@ -424,7 +424,7 @@
         <!-- /.footer-contact_item -->
         <div class="footer-contact_item">
           <div class="footer-contact_img img3"></div>
-          <div class="footer-contact_text">Телефон:<a href="tell:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a></div>
+          <div class="footer-contact_text">Телефон:<a href="tel:+74954225131" class="form-call_tel">+7 (495) 42-251-31</a></div>
           <!-- /.footer-contact_text span -->
         </div>
         <!-- /.footer-contact_item -->
@@ -440,13 +440,22 @@
     var button = document.querySelector('#button');
     var modal = document.querySelector('#modal');
     var close = document.querySelector('#close');
-
+    var link = document.querySelectorAll('.price-card_link');
+    
+   
     button.addEventListener('click', function modalVisible() {
       modal.classList.toggle('modal-visible');
     });
     close.addEventListener('click', function modalHiden() {
       modal.classList.remove('modal-visible');
-    })  
+    });
+    link.forEach(function(elem){
+        elem.addEventListener('click', function() {
+          modal.classList.toggle('modal-visible');
+      });
+    });
+    
+
   </script>
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/slick.min.js"></script>
